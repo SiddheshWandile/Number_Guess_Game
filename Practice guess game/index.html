@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game(1)</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <main>
+        <section id="first-section">
+            <h2>Guess The Random Number between 1-100</h2>
+            <img src="./pngaaa.com-2340867.png" alt="gamepic">
+            <p>Select the Difficulty Level</p>
+            <div class="buttons">
+                <button onclick="easyMode()" id="easyLevel">Easy: 10 Attempts</button>
+                <button onclick="hardMode()" id="hardLevel">Hard: 5 Attempts</button>
+            </div>
+        </section>
+
+        <section id="secound-section">
+            <div id="newGame">
+                <button id="newGameBtn">New Game</button>
+            </div>
+
+            <h2 id="GuessTitle">Your Guess</h2>
+            <input type="number" id="GuessInput" min="1" max="100" placeholder="Enter Your Guess"
+                onchange="compareGuess()">
+
+            <div id="stat">
+                <div class="info">
+                    <p>Number of previous attempts</p>
+                    <span id="attempt">0</span>
+                </div>
+                <div class="info">
+                    <p>Number of previous Guesses</p>
+                    <span id="guess">0</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

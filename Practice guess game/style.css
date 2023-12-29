@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(90, 40, 137);
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: cursive;
+}
+
+p {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 23vw;
+    min-width: 38%;
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem;
+    border: 5px solid rgba(198, 148, 244, 0.548);
+}
+
+#first-section {
+    margin: 7%;
+    padding: 2rem;
+}
+
+#first-section img {
+    width: 60%;
+    min-width: 75%;
+    margin: 25px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+button {
+    font-size: 1.7rem;
+    margin: 15px 0px;
+    padding: 15px 50px;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgba(86, 27, 164, 0.911);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button:hover {
+    box-shadow: rgba(121, 121, 244, 0.877) 2px 1px 2px 2px;
+    background-color: rgba(93, 36, 167, 0.911);
+}
+
+#secound-section {
+    width: 90%;
+    margin: 5%;
+    padding: 2rem;
+}
+
+#newGame {
+    margin: 20px 0;
+}
+
+input {
+    margin: 50px 0;
+    width: 15vw;
+    height: 5vh;
+    padding: 5%;
+    text-align: center;
+    border-radius: 1rem;
+    border: 0.1rem solid gray;
+    background: transparent;
+}
+
+.stat{
+    text-align: left;
+    margin-bottom: 40rem;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.info span {
+    font-size: 2rem;
+    color: red;
+    /* padding: 2%; */
+}

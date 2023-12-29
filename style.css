@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #350363;
+    --background: #ffe9db;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #491579;
+}
+
+main {
+    width: 25vw;
+    text-align: center;
+    background-color: var(--background);
+    border: solid var(--dark);
+    border-width: 0.8rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #1f2933;
+    min-width: 40%;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.image {
+    width: 70%;
+    /* max-height: 22rem; */
+    height: auto;
+    margin: 1rem 0 4rem;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 2rem;
+}
+
+button {
+    min-width: 20rem;
+    background-image: linear-gradient(92.88deg,
+            #455eb5 9.16%,
+            #5643cc 43.89%,
+            #673fd7 64.72%);
+    border-radius: 1rem;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.25) 2px 3px 8px;
+    transition: all 0.5s;
+    /* user-select: none;
+    -webkit-user-select: none; */
+    text-transform: capitalize;
+}
+
+button:hover {
+    box-shadow: rgba(40, 29, 124, 0.2) 0 5px 30px;
+    transition-duration: 0.1s
+}
+
+/* our game area  */
+
+#gameArea {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newGameButton button {
+    margin: 2rem 0;
+}
+
+input {
+    border: 0.1rem solid lightgray;
+    background: transparent;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+}
+
+.stats {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.info span {
+    font-size: 2rem;
+    color: red;
+}
